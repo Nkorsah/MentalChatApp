@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from "./Components/Button"
-import Card from './Components/Card';
-import CardCounter from './Components/CardCounter';
+
+import Card from './Components/Card.jsx';
+import CardCounter from './Components/CardCounter.jsx';
+import SignIn from './Components/SignIn.jsx';
 
 function App() {
   const cardData = {
@@ -13,13 +14,8 @@ function App() {
   }
   const cardDescrption1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
   return (
-    <div className="card-container">
-      <Card cardName={"Card 1"} description={cardDescrption1}/>
-      <Card {...cardData.card2}/> 
-      <Card cardName={"Card 3"} description={"Description 3"}/>
-      <div className="card-container">
-        <CardCounter />
-      </div>
+    <div className='card-container'>
+      <SignIn />
     </div>
   );
 }

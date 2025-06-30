@@ -9,8 +9,11 @@
 }
 
 .card-container {
-  background-color: yellow;
-  justify-content: center
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional: center vertically too */
+  height: 100vh;        /* optional: full height of screen */
+  background-color: gray;
 }
 
 @media (prefers-reduced-motion: no-preference) {

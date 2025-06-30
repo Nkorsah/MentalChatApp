@@ -1,4 +1,4 @@
-import Button from "./Button";
+
 function Card(props) { // props make components reusable
     return (
         <div className="card">
