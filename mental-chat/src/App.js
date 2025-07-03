@@ -4,6 +4,8 @@ import './App.css';
 import Card from './Components/Card.jsx';
 import CardCounter from './Components/CardCounter.jsx';
 import SignIn from './Components/SignIn.jsx';
+import Navigation from './Components/Navigation.jsx';
+import Main from './Components/Main.jsx';
 
 function App() {
   const cardData = {
@@ -15,6 +17,9 @@ function App() {
   const cardDescrption1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
   return (
     <div className='card-container'>
+      <h1>React Router Demo</h1>
+        <Navigation />
+        <Main />
       <SignIn />
     </div>
   );

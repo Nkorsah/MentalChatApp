@@ -1,7 +1,8 @@
 import React from 'react'
-import {Button} from '@mui/material'
+// import {Button} from '@mui/material'
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { auth } from '../firebase.js';
+import Button from './Button.jsx';
 
 const SignIn = () => {
   const handleSignIn = () => {
@@ -30,7 +31,7 @@ const SignIn = () => {
  
   return (
     <div>
-      <button onClick={handleSignIn}>Sign In With Google</button>
+      <Button onClick={handleSignIn}>Sign In With Google</Button>
     </div>
   )
 }
